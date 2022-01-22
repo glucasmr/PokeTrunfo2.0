@@ -1,0 +1,48 @@
+<html>
+
+<head>
+	<title>
+		PokeTrunfo 2.0
+	</title>
+</head>
+
+<body>
+	<div class="container">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Pok%C3%A9mon_Trading_Card_Game_logo.svg/1280px-Pok%C3%A9mon_Trading_Card_Game_logo.svg.png" class="page-logo" alt="">
+		<h2 class="page-title">Teste suas habilidades como<br> mestre pokémon!</h2>
+		<button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+		<form id="form">
+			<h2>Escolha o seu atributo! Você vence se:</h2>
+			<h3>1. Escolheu ATK e a DEF do oponente é menor.<br>
+				2. Escolheu DEF e o ATK do oponente é menor. <br>
+				3. Escolheu MP e o MP do oponente é menor.</h3>
+			<div class="wrapper">
+				<div>
+					<div id="carta-jogador"><img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
+						<p class="carta-subtitle">???</p>
+						<div id='opcoes' class='carta-status'>
+							<p type='text' name='atributo'>atk ???</p>
+							<p type='text' name='atributo'>def ???</p>
+							<p type='text' name='atributo'>mp ???</p>
+						</div>
+						<h3></h3>
+					</div>
+				</div>
+				<div>
+					<div id="carta-maquina" class="carta"><img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
+						<p class="carta-subtitle">???</p>
+						<div id='opcoes' class='carta-status'>
+							<p type='text' name='atributo'>atk ???</p>
+							<p type='text' name='atributo'>def ???</p>
+							<p type='text' name='atributo'>mp ???</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+			<div id="resultado"></div>
+		</form>
+	</div>
+</body>
+
+</html>
